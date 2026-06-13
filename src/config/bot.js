@@ -62,12 +62,8 @@ export const botConfig = {
       { question: "Have you had any prior violations in this server", required: true },
       }
 
-    // Embed colors by application status.
-    statusColors: #FFA500
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
-    },
+
+  
 
     // How long users must wait before submitting another application (hours).
     applicationCooldown: 12, 
