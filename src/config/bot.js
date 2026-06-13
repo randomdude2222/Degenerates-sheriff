@@ -264,7 +264,7 @@ export const botConfig = {
     maximumDuration: 2592000000, 
 
     // Role IDs allowed to host giveaways.
-    allowedRoles: [],
+    allowedRoles: [1507050608069316811],
 
     // Role IDs that bypass giveaway restrictions.
     bypassRoles: [],
@@ -398,18 +398,18 @@ export const botConfig = {
     types: {
       // Built-in counter types and how each count is calculated.
       members: {
-        name: "👥 Members",
+        name: "Members",
         description: "Total members in the server",
         getCount: (guild) => guild.memberCount.toString(),
       },
       bots: {
-        name: "🤖 Bots",
+        name: "Degenerate bots",
         description: "Total bot accounts in the server",
         getCount: (guild) =>
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
-        name: "👤 Humans",
+        name: "Members",
         description: "Total human members (non-bots)",
         getCount: (guild) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
@@ -443,15 +443,15 @@ export const botConfig = {
     welcome: true,
 
     // Community engagement systems.
-    tickets: true,
+    tickets: false,
     giveaways: true,
     birthday: true,
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
-    joinToCreate: true,
+    verification: false,
+    reactionRoles: false,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
     voice: true,
