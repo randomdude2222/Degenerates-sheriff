@@ -59,7 +59,7 @@ export const botConfig = {
       { question: "Are you willing to enforce rules for the better of this server?", required: true },
       { question: "Are you moderater in any other servers?", required: true },
       { question: "Do you understand if you misuse your power you will be moderated", required: true },
-      { question: "Have you had any prior violations in this server", required: true
+      { question: "Have you had any prior violations in this server", required: true },
       ]
 
     // Embed colors by application status.
